@@ -1,0 +1,25 @@
+<?php get_header(); ?>
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+  <div><span class="eyebrow" style="color:#2CF7EE">Digital Growth Agency</span><h1><?php echo esc_html(get_theme_mod('hero_title','Stories That Move Brands Forward.')); ?></h1><p><?php echo esc_html(get_theme_mod('hero_text','Strategy, creativity, technology and performance—built together to create brands that grow with purpose.')); ?></p><div class="hero-actions"><a class="btn btn-primary" style="background:#fff;color:#212E68" href="#contact">Start a Project</a><a class="btn btn-outline" href="#services">Explore Services</a></div></div>
+  <div class="hero-card"><div class="hero-card-grid"><div class="metric"><b>360°</b><span>Integrated brand thinking</span></div><div class="metric"><b>7+</b><span>Growth capabilities</span></div><div class="metric"><b>AI+</b><span>Data-led innovation</span></div><div class="metric"><b>∞</b><span>Ideas with impact</span></div></div></div>
+</div></section>
+
+<section class="section" id="about"><div class="container about-grid">
+  <div class="about-visual"><div class="about-card"><strong>Strategy meets execution.</strong><p>We connect brand, content, media, search, technology and analytics into one growth ecosystem.</p></div></div>
+  <div><span class="eyebrow">About CI360</span><h2 class="section-title"><?php echo esc_html(get_theme_mod('about_title','Built for ambitious brands.')); ?></h2><p class="section-copy"><?php echo esc_html(get_theme_mod('about_text','CI360 Degrees brings strategy, storytelling, digital performance and technology together to turn business challenges into measurable brand growth.')); ?></p><div class="about-list"><div>Strategy & Storytelling</div><div>Creative, Content & Social</div><div>Performance, SEO & Analytics</div><div>Technology & Web Experiences</div></div></div>
+</div></section>
+
+<section class="section services" id="services"><div class="container"><span class="eyebrow">What We Do</span><h2 class="section-title">Capabilities that work together.</h2><p class="section-copy">From defining the brand to driving measurable growth, every service is designed to connect strategy with execution.</p><div class="cards">
+<?php $services=[['01','Strategy & Storytelling','Positioning, messaging, campaign thinking and brand systems built around clear business goals.'],['02','Social Media','Content strategy, calendars, creative direction and community-first communication.'],['03','Performance','Paid media strategy, conversion thinking and performance optimization across digital channels.'],['04','SEO & Local','Organic visibility, local search, content optimization and search-led growth.'],['05','Content & Creative','Campaigns, design systems, video concepts, copy and high-impact visual communication.'],['06','Technology & Web','Websites, landing pages, digital experiences and technology-led growth solutions.']]; foreach($services as $s): ?>
+<div class="card"><div class="icon"><?php echo esc_html($s[0]); ?></div><h3><?php echo esc_html($s[1]); ?></h3><p><?php echo esc_html($s[2]); ?></p></div><?php endforeach; ?>
+</div></div></section>
+
+<section class="section" id="team"><div class="container"><span class="eyebrow">Leadership & Strategy</span><h2 class="section-title">People behind the thinking.</h2><div class="team-grid">
+<div class="team-card"><h3>Harshada Bandal Bhusari</h3><div class="team-role">Digital Strategy & SEO</div><p>A digital strategist with 6+ years of experience, specializing in SEO, GMB/GBP, Quick Commerce, and Marketplace SEO to drive organic growth, strengthen search visibility, and help businesses rank effectively on Google and Bing.</p></div>
+<div class="team-card"><h3>Pragati Singh Chauhan</h3><div class="team-role">Lead Brand Strategist</div><p>A Lead Brand Strategist with 5+ years of experience in brand strategy, consumer insights, digital marketing, AI-driven innovation, analytics, and growth—blending creative thinking with data-led strategy to deliver measurable business impact.</p></div>
+</div></div></section>
+
+<section class="section contact" id="contact"><div class="container contact-grid"><div><span class="eyebrow" style="color:#2CF7EE">Let’s Work Together</span><h2 class="section-title">Ready to move your brand forward?</h2><p style="color:rgba(255,255,255,.75);max-width:650px">Tell us what you are building, launching or trying to grow. We’ll bring the right mix of strategy, creativity and digital execution.</p></div><div class="contact-box"><h3>Start a conversation</h3><p>Update these details from Appearance → Customize.</p><div class="contact-items"><a href="mailto:<?php echo antispambot(esc_attr(get_theme_mod('contact_email','hello@ci360degrees.com'))); ?>"><?php echo esc_html(get_theme_mod('contact_email','hello@ci360degrees.com')); ?></a><a href="tel:<?php echo esc_attr(preg_replace('/[^0-9+]/','',get_theme_mod('contact_phone','+91 00000 00000'))); ?>"><?php echo esc_html(get_theme_mod('contact_phone','+91 00000 00000')); ?></a></div></div></div></section>
+</main>
+<?php get_footer(); ?>
